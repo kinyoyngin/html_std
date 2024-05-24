@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8교시 미션-1</title>
+    <style>
+        #kim1 {
+            /*height:700px;*/
+            height: 70vh;
+            /*max-width: 900px; /*900보다 넓어지지 않는다*/
+            max-width:80vw;
+            background-color: cadetblue;
+            margin:auto;
+            /*margin-top: 15vh;*/
+            display: flex;
+            border: 10px solid red; 
+            justify-content: center;
+            align-items: flex-start;
+            padding: top 20px;
+                }
+        #kim1:hover {
+            background-color:chocolate;}
+           form{
+              
+              max-width: 270px;}
+           form [type="submit"]  {margin: auto; display: block;}
+           #kim2{border: 5px dashed yellow; flex-basis:250px;box-sizing: border-box;}
+           main{border: 5px dashed yellow; flex-basis:250px;box-sizing: border-box;}
+
+footer {border:10px solid blue; height: 300px; background: yellow; padding: 50px; width: 500px;
+        box-sizing: border-box;     
+}
+
+           @media(max-width: 500px)
+           {
+           #kim1 {flex-direction: column;}
+           #kim1>* {width:100%;}
+           }
+           /*박스 사이즈 속성은 넒이에서 내부여백과 테두리두께를 제외할 떄 사용할 수 있다
+           넒이 또는 높이는 기본적으로 넒이값 플러스 내부여백 플 테두리 두께로 이루어져있다.
+           footer의 넒이는 500픽셀 내부여백은 100픽셀 테두리두게는 20픽셀 총넒이는 620픽셀이 된다.
+           이때 위드 500픽스 보더 10픽스 솔리드 레드 패딩50픽스 박스사이즈 보더박스이다*/
+
+
+        
+    </style>    
+</head>
+<body>
+    <div id="kim1">
+      <div id="kim2">
+        <h2>이름 입력</h2>  
+        
+            <form action="#">
+                <label for="\aaa">First name:</label>
+                <input type="text" id="aaa" name="fname" placeholder="홍"><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="bbb" name="lname" placeholder="길동"><br><br>
+                <input type="submit" value="submit">
+            </form> 
+        </div>
+
+
+        <main>
+        <h2>이메일 수신동의</h2>
+        <form action="#">
+            <input type="radio" id="kim" name="e">
+            <label for="kim1">yes</label><br>
+            <input type="radio" id="no" name="e">
+            <label for="kim2">no</label>
+            <input type="submit" value="확인">
+        </form>
+        <input type="checkbox"name="hobby" value="a"> 게임 <br><!--체크박스 만들기-->
+        <input type="checkbox"name="hobby" value="b"> 낚시 <br>
+        <input type="checkbox"name="hobby" value="c"> 등산 <br>
+        <input type="color"><br><!--칼라만들기-->
+        <input type="date"><br><!--년 월 만들기-->
+        <input type="email"><br> <!--{min-height.300px 이메일 칸 만들기}-->
+        <input type="file"><br><!--파일을 선택할수있게 만들어줌-->
+        <input type="hidden"><!--안보이게 하는기능-->
+        <input type="image" src="images/dsa.jpeg"> <!--이미지넣기-->       
+        <input type="number" min="23" max="35"><br><!--숫자만입력-->
+        <input type="range" min="0" max="30">  <!--줄바넣는거-->
+        <input type="search"
+        
+
+        </main>
+    </div>
+    <!--<footer>하단정보</footer> -->
+
+</body>
+</html>
